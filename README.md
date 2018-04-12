@@ -1,0 +1,2 @@
+# PluginHookAcitivity
+Android插件化，启动一个没有在AndroidManifest里面注册的Activity
