@@ -17,7 +17,7 @@ public class HookHelper {
     public static void hookActivityManagerNative() throws ClassNotFoundException,
             NoSuchMethodException, InvocationTargetException,
             IllegalAccessException, NoSuchFieldException {
-        //
+
         Class<?> activityManagerNative = Class.forName("android.app.ActivityManagerNative");
 
         Field gDefaultField = activityManagerNative.getDeclaredField("gDefault");
