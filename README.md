@@ -1,7 +1,7 @@
 # PluginHookActivity
 Android插件化，在MainActivity里面启动一个没有在AndroidManifest里面注册的Activity，即TargetActivity。
 
-##工程结构说明
+#   工程结构说明
 1.  工程中包含三个Activity，MainActivity，ProxyActivity，TargetActivity，
 
 其中MainActivity和ProxyActivity在AndroidManifest里面注册了，TargetActivity没有注册。
@@ -11,7 +11,7 @@ Android插件化，在MainActivity里面启动一个没有在AndroidManifest里�
 Android的IActivityManager服务和ActivityThread里面的一个Handler.Callback的回调。
 
 
-##过程说明
+#   过程说明
 1.  MainActivity里面通过Intent启动TargetActivity。
 
 2.  IActivityManagerHandler拦截startActivity方法，将启动的目标Activity回调替换成在AndroidManifest里面注册的
